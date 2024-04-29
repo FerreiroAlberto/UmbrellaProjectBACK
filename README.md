@@ -1,73 +1,68 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Week 9 - Proyecto final
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Realiza una app fullstack JS (Angular, Node, Express (o Nest) SQL) con las siguientes características deseables:
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Funcionalidad
 
-## Description
+- Listado de items
+- Detalle de item (página aparte)
+- Crear item (página aparte con un formulario e imagen obligatoria con un campo tipo file)
+- Modificar item (mismo formulario que para crear)
+- Borrar item (se tiene que poder borrar desde el listado)
+- Paginación (puede ser el sistema clásico o un botón "Load more")
+- Filtros (en el propio listado, que filtre sin cambiar de página)
+- Login y registro de usuario
+- Feedbacks al usuario
+- Gestión de errores
+- Cloudinary (o similar) para los archivos binarios
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### Tipos básicos
 
-## Installation
+- RedSocial
+- eCommerce (roles de usuario: admin, user)
 
-```bash
-$ npm install
-```
+## Requisitos Frontend
 
-## Running the app
+- Mobile First (responsive), incluso Mobile Only (dependiendo del proyecto)
+- TypeScript
+- Angular + gestión del estado centralizado con Observables o Signal (Flux)
+- tests unitarios / de componentes (opcionalmente snapshot)
+- tests de integración
+- README con información sobre la app
+- 100% coverage
+- 0 deuda técnica (e.g. en Sonar)
+- Lighthouse con métricas en verde
 
-```bash
-# development
-$ npm run start
+## Requisitos Backend
 
-# watch mode
-$ npm run start:dev
+- TypeScript
+- Node + Express (o Nest)
+- auth con JWT
+- tests unitarios
+- tests de endpoints (supertest)
+- guardado de archivos binarios en disco duro (temp) y Cloudinary (o similar)
 
-# production mode
-$ npm run start:prod
-```
+- validación de requests con Joi o Nest Validator
 
-## Test
+- README con información de uso y con endpoints (de cada endpoint método, url, body y response)
+- 100% coverage
+- 0 deuda técnica (e.g. en Sonar)
+- Colección de endpoints de Postman exportada como JSON (en el root del proyecto)
 
-```bash
-# unit tests
-$ npm run test
+## E2E
 
-# e2e tests
-$ npm run test:e2e
+Proceso de login de usuario testado con Cypress
 
-# test coverage
-$ npm run test:cov
-```
+## Check diario
 
-## Support
+- daily meeting (qué tareas hice ayer, qué stoppers tuve, qué tareas haré hoy)
+- informes de sonar sobre la rama principal, front y back
+- > = 80% cover
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## Challenge inicial
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+- Figma
+- Responsabilidades de los componentes
+- Entities y relaciones
+- Rutas del backend
+- Trello (backlog completo)
